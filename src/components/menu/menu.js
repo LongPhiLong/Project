@@ -19,7 +19,7 @@ export default Menu;
 export const MenuPane = styled.div`
     position: fixed;
     left: 20px;
-    top: 60%;
+    top: 80%;
     width: 60px;
     padding: 4px 0;
     z-index: 100;

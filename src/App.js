@@ -1,4 +1,5 @@
 import Home from './components/page/Home';
+import './App.css';
 import Contact from './components/page/Contact'
 import Navbar from './components/NavBar/NavBar';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
@@ -13,10 +14,14 @@ import Menu2 from './components/menu/menu2';
 import Ruler from './components/page/ruler';
 import Security from './components/page/security';
 import Revice from './components/page/revice';
+import List1 from './components/page/list1';
+import List2 from './components/page/list2';
+import List3 from './components/page/list3';
+import List4 from './components/page/list4';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <BrowserRouter>
         <Navbar/>
         <Routes>
@@ -30,6 +35,10 @@ function App() {
           <Route path='/quydinhvahinhthucthanhtoan' element={< Ruler />} />
           <Route path='/chinhsachbaomatthongtin' element={<Security />} />
           <Route path='/chinhsachgiaonhanhanghoa' element={< Revice />} />
+          <Route path='/bosuutap1' element={<List1 />} />
+          <Route path='/bosuutap2' element={<List2 />} />
+          <Route path='/bosuutap3' element={<List3 />} />
+          <Route path='/bosuutap4' element={<List4 />} />
         </Routes>
         <Menu />
         <Menu2/>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { useScrollY } from '../hooks';
-import logoo from '../img/logooo.png'
+import logoo from '../assets/images/logooo.png';
 import {GiHamburgerMenu} from 'react-icons/gi'
 
 function Navbar(props) {
