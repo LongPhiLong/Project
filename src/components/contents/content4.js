@@ -85,21 +85,31 @@ export const Contentss = styled.div`
 .btnleft {
     position: absolute;
     top: 50%;
-    left: 40px;
+    left: 30px;
     z-index: 20;
     transform-origin: center;
     cursor: pointer;
     font-size: 50px;
+
+    @media only screen and (max-width: 700px){
+        font-size: 40px;
+        left: 20px;
+    }
 }
 
 .btnright {
     position: absolute;
     top: 50%;
-    right: 40px;
+    right: 30px;
     z-index: 20;
     transform-origin: center;
     cursor: pointer;
     font-size: 50px;
+
+    @media only screen and (max-width: 700px){
+        font-size: 40px;
+        right: 20px;
+    }
 }
 
 `;
@@ -116,6 +126,10 @@ export const NailSlider = styled.div`
     overflow: hidden;
     padding-top: 18px;
     padding-bottom: 18px;
+
+    @media only screen and (max-width: 700px){
+        grid-template-columns: repeat(${foots.length}, 200px);
+    }
 
     &:hover .dauItems{
         opacity: 0.5;

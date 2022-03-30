@@ -73,26 +73,43 @@ export const RowContent = styled.div`
         text-align: center; 
         margin:0;
         padding-top: 10px;
+
+        @media only screen and (max-width: 700px){
+            font-size: 20px;
+        }
+
     }
 
     .btnleft {
         position: absolute;
         top: 50%;
-        left: 40px;
+        left: 30px;
         z-index: 20;
         transform-origin: center;
         cursor: pointer;
         font-size: 50px;
+
+        @media only screen and (max-width: 700px){
+            font-size: 40px;
+            left: 20px;
+        }
+
     }
 
     .btnright {
         position: absolute;
         top: 50%;
-        right: 40px;
+        right: 30px;
         z-index: 20;
         transform-origin: center;
         cursor: pointer;
         font-size: 50px;
+
+        @media only screen and (max-width: 700px){
+            font-size: 40px;
+            right: 20px;
+        }
+
     }
 
 `;
@@ -110,12 +127,19 @@ export const DauSlider = styled.div`
     padding-top: 28px;
     padding-bottom: 28px;
     scroll-behavior: smooth;
+    padding-left: 10px;
+    padding-right: 10px; 
+    
+    @media only screen and (max-width: 700px){
+        grid-template-columns: repeat(${daus.length}, 180px);
+    }
 
     &:hover .dauItems{
         opacity: 0.5;
     }
 
     .dauItems {
+
         transform: scale(1);
         max-width: 250px;
         max-height: 350px;

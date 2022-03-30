@@ -75,7 +75,7 @@ export const Selector = styled.div`
     background-color: transparent;
     transition: 0.5s all ease;
     position: fixed;
-    height: 60px;
+    height: 70px;
     top: 0;
    
     
@@ -147,11 +147,13 @@ export const Selector = styled.div`
 
             img {
                 height: 50px;
-                margin-top:5px;
+                margin-top:10px;
                 margin-bottom: 5px;
                 vertical-align: middle;
                 transition: 0.3s all ease;
                 border: 0;
+                }
+
             }
         }
 
@@ -163,7 +165,7 @@ export const Selector = styled.div`
 
             .navmenu{
                 margin:0;
-                height: 60px;
+                height: 70px;
                 width: 100%;
                 display: flex;
                 padding: 0;
@@ -172,9 +174,11 @@ export const Selector = styled.div`
                 li {
                     display: inline-block;
                     list-style: none;
+                    text-transform: uppercase;
+                    
 
                     a {
-                        line-height: 50px;
+                        line-height: 65px;
                         color: #333;
                         padding-left: 10px;
                         padding-right: 10px;
@@ -182,7 +186,7 @@ export const Selector = styled.div`
                         font-size: 15px;
                         display: block;
                         transition: 0.5s all ease;   
-                        height: 60px;
+                        height: 70px;
                         text-decoration:none;
                         
                         &:hover {
@@ -199,7 +203,6 @@ export const Selector = styled.div`
 
         .menutop2 {
             text-align: center;
-            float: left;
             width: 100%;
             
 
@@ -208,15 +211,14 @@ export const Selector = styled.div`
                 height: 50px;
                 width: 100%;
                 display: flex;
-                padding: 0;
                 flex-direction: column;
-                
+                padding: 0px;
 
                 li {
                     display: inline-block;
                     list-style: none;
                     background-color:rgba(241,232,225,0.6);
-                    
+                    text-transform: uppercase;
 
                     a {
                         line-height: 50px;
